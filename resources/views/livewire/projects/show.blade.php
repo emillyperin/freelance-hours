@@ -1,3 +1,1 @@
-<div>
-componente show
-</div>
+<x-projects.card :$project />
