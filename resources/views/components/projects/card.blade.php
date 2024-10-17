@@ -16,8 +16,8 @@
         </div>
         <div>
             <livewire:proposals.create :$project />
-
             <livewire:projects.timer :$project />
+
         </div>
     </div>
 
@@ -29,7 +29,7 @@
         <div class="uppercase font-bold text-[#8C8C9A] text-[12px]">Tecnologias</div>
         <div class="flex gap-[8px] items-center pb-2">
             @foreach ($project->tech_stack as $tech)
-                <x-ui.tech :icon="$tech" :text="$tech" />
+            <x-ui.tech :icon="$tech" :text="$tech" />
             @endforeach
         </div>
     </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="flex items-center space-x-[4px]">
                     @foreach (range(1, $project->author->stars) as $star)
-                        <x-ui.icons.star class="h-[14px]" />
+                    <x-ui.icons.star class="h-[14px]" />
                     @endforeach
                 </div>
             </div>
